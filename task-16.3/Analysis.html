@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/analysis.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+    <div>
+        <div class="top">
+            <div class="sky">Dashboard</div>
+            <div class="green1">Charts</div>
+            <div class="orange">Widgets</div>
+            <div class="red">Tables</div>
+            <div class="blue">Full Width</div>
+            <div class="red1">Forms</div>
+            <div class="blue">Buttons</div>
+            <div class="sky">Elements</div>
+            <div class="green">Calnedar</div>
+            <div class="orange">Errors</div>
+        </div>
+        <div class="sec">
+
+            <div class="left">
+                
+
+
+                                         <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+                                        <script>
+                                        var xValues = [];
+                                        var yValues = [];
+                                        generateData("Math.sin(x)", 0, 10, 0.5);
+
+                                        new Chart("myChart", {
+                                        type: "line",
+                                        data: {
+                                            labels: xValues,
+                                            datasets: [{
+                                            fill: false,
+                                            pointRadius: 2,
+                                            borderColor: "rgba(0,0,255,0.5)",
+                                            data: yValues
+                                            }]
+                                        },    
+                                        options: {
+                                            legend: {display: false},
+                                            title: {
+                                            display: true,
+                                            
+                                            fontSize: 16
+                                            }
+                                        }
+                                        });
+                                        function generateData(value, i1, i2, step = 1) {
+                                        for (let x = i1; x <= i2; x += step) {
+                                            yValues.push(eval(value));
+                                            xValues.push(x);
+                                        }
+                                        }
+                                        </script>
+
+            </div>
+            <div class="down1">
+                <div class="box"><h3>2540</h3> <h4>Total Users</h4></div>
+                <div class="box"><h3>120</h3> <h4>New Users</h4></div>
+                <div class="box"><h3>656</h3> <h4>Total Shop</h4></div>
+                <div class="box"><h3>9540</h3> <h4>Total Orders</h4></div>
+                <div class="box"><h3>100</h3> <h4>Pending Orders</h4></div>
+                <div class="box"><h3>8540</h3> <h4>Online Orders</h4></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

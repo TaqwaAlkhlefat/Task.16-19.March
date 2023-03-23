@@ -1,0 +1,130 @@
+
+
+
+.top {
+   display: grid;
+   grid-template-columns: auto auto auto auto auto auto;
+   grid-gap: 10px;
+   background-color: #e2e0e0;
+   padding: 3px;
+   height: 200px;
+   color: white;
+   text-align: center;
+   
+}
+
+.green1 {
+    grid-area: 1 / 2 / span 1 / span 2;
+    background-color: green;
+    
+    
+  }
+
+  .red1 {
+    grid-area: 2 / 1 / span 1 / span 2;
+    background-color: orangered;
+    
+  }
+
+  .sky {
+    background-color: skyblue;
+  }
+
+  .green {
+    background-color: green;
+  }
+
+  .orange {
+    background-color:  orange;
+  }
+
+  .red {
+    background-color: orangered;
+  }
+
+  .blue {
+    background-color: blue;
+  }
+
+  .sec {
+    display: grid;
+    grid-template-columns: auto auto;
+
+
+  }
+
+  .down1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .box {
+    background-color: rgb(112, 112, 112);
+    color: white;
+    width: 200px;
+    height: 110px;
+    text-align: center;
+  }
+
+  .left {
+    width: 900px;
+    
+  }
+
+
+
+  
+  @media only screen and (max-width:1146px)  {
+      .top {
+          display: grid;
+          grid-template-columns: auto auto auto ;
+          grid-gap: 10px;
+          background-color: #e2e0e0;
+          padding: 3px;
+          height: 250px;
+          color: white;
+          text-align: center;
+       }
+        .sec {
+          display: grid;
+          grid-template-columns: auto ;
+        }
+  }
+
+  @media screen and (max-width:900px) {
+
+    .top {
+      display: grid;
+      grid-template-columns: auto auto  ;
+      grid-gap: 10px;
+      background-color: #e2e0e0;
+      padding: 3px;
+      height: 250px;
+      color: white;
+      text-align: center;
+   }
+
+    .down1 {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 10px;
+      width: 30%;
+      margin: 10px;
+      padding: 10px;
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+

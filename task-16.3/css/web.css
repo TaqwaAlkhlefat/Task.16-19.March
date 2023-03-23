@@ -1,0 +1,127 @@
+
+.con {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    
+}
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    
+}
+
+.bod {
+    display: grid;
+    grid-template-rows: auto  ;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.boxs {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+}
+
+h4 {
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    height: 30px;
+}
+
+
+
+.box {
+    border: 2px solid black;
+    margin-right: 0px;
+    width: 250px;
+    height: 150px;
+    
+}
+
+h2 {
+    margin: 10px;
+}
+
+h5 {
+    margin: 10px;
+}
+
+.head {
+    margin: 10px;
+}
+
+h6 {
+    margin: 5px;
+}
+
+.side {
+    
+    height: 900px;
+    margin: 5px;
+    background-color:  rgb(36, 35, 35) ;
+    color: white;
+    width: 60%
+    
+}
+
+@media screen and (max-width: 928px)  {
+
+    .side {
+        
+    
+        height: 500px;
+        margin: 5px;
+        background-color:  rgb(36, 35, 35) ;
+        color: white;
+        width: 60%
+        
+    }
+    
+}
+
+@media screen and (max-width: 990px) {
+
+    .boxs {
+
+        display: flex;
+        flex-direction: column;
+        
+        gap: 15px;
+        
+    }
+
+    .con {
+        display: grid;
+        grid-template-columns: auto ;
+        
+    }
+
+
+
+    .side {
+        height: 70px;
+        margin: 5px;
+        background-color:  rgb(36, 35, 35) ;
+        color: white;
+        width: 100%
+        
+    }
+
+    .bod {
+        display: grid;
+        grid-template-rows: auto  ;
+        width: 100%;
+        justify-items: center;
+    }
+
+
+}
